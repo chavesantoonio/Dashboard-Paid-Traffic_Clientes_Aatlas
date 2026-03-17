@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/c/Users/anton/OneDrive/Área de Trabalho/PROJETO DASH TESTE\" && npm install 2>&1)",
+      "Bash(cd \"/c/Users/anton/OneDrive/Área de Trabalho/PROJETO DASH TESTE\" && npx tsc --noEmit 2>&1)",
+      "Bash(cd \"/c/Users/anton/OneDrive/Área de Trabalho/PROJETO DASH TESTE\" && npm run build 2>&1)",
+      "Bash(cd \"/c/Users/anton/OneDrive/Área de Trabalho/PROJETO DASH TESTE\" && npm install -D autoprefixer 2>&1)",
+      "Bash(cd \"/c/Users/anton/OneDrive/Área de Trabalho/PROJETO DASH TESTE\" && npm run dev 2>&1)",
+      "Bash(claude doctor:*)",
+      "Bash(cd C:\\\\Users\\\\anton\\\\OneDrive\\\\Área de Trabalho\\\\PROJETO DASH TESTE:*)",
+      "Bash(npm install:*)",
+      "Bash(npx aios-core:*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(npx shadcn@latest:*)",
+      "Bash(xargs grep:*)",
+      "Bash(npx supabase:*)",
+      "Bash(claude mcp:*)",
+      "Bash(sed:*)",
+      "Read(//mnt/c/Users/anton/OneDrive/Área de Trabalho/ICONS/**)",
+      "Read(//c/Users/anton/OneDrive/Área de Trabalho/ICONS/webp/**)",
+      "Bash(cmd.exe /c \"dir /b \"\"C:\\\\Users\\\\anton\\\\OneDrive\\\\Área de Trabalho\\\\ICONS\\\\webp\"\"\")",
+      "Bash(cp:*)",
+      "Bash(cmd.exe:*)",
+      "Bash(powershell.exe:*)"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Content area — Light Mode (institutional, fintech) ── */
+    --background: 0 0% 98%;               /* zinc-50 — ultra-light gray page bg */
+    --foreground: 240 10% 4%;             /* zinc-950 #09090b */
+    --card: 0 0% 100%;                    /* pure white — cards float above bg */
+    --card-foreground: 240 10% 4%;        /* zinc-950 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 4%;
+    --primary: 20 98% 46%;                /* #E85002 — slightly muted orange for light */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 4% 32%;       /* zinc-600 #52525b — legible label gray */
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 90%;                 /* zinc-200 #e4e4e7 */
+    --input: 240 6% 90%;
+    --ring: 20 98% 46%;
+    --radius: 0.5rem;
+
+    /* ── Sidebar — Light Mode: white bg, dark text ── */
+    --sidebar-bg: 0 0% 100%;              /* white */
+    --sidebar-fg: 240 10% 12%;            /* zinc-900 — dark text */
+    --sidebar-accent: 240 5% 94%;         /* zinc-100 — hover/active bg */
+    --sidebar-accent-fg: 240 10% 4%;      /* zinc-950 */
+    --sidebar-border: 240 6% 90%;         /* zinc-200 */
+  }
+
+  .dark {
+    /* ── Content area — Dark Mode (pure black, design Aatlas) ── */
+    --background: 0 0% 0%;                /* #000000 */
+    --foreground: 0 0% 98%;
+    --card: 0 0% 0%;                      /* #000000 */
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 20 100% 54%;               /* #FF6200 — vivid orange */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 56%;
+    --accent: 0 0% 9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 13%;
+    --input: 0 0% 13%;
+    --ring: 20 98% 46%;
+
+    /* ── Sidebar — always deep black ── */
+    --sidebar-bg: 0 0% 2%;
+    --sidebar-fg: 0 0% 84%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-fg: 0 0% 98%;
+    --sidebar-border: 0 0% 6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
